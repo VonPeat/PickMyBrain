@@ -1,0 +1,71 @@
+.large-hero {
+    margin-bottom: 200px;
+
+    &__image {
+        position: absolute;
+        z-index: -1;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        position: relative;
+        grid-template-columns: auto;
+        gap: 10px;
+        padding: 100px 10px;
+
+        @mixin atMedium {
+            grid-template-columns: auto auto;
+        }
+    }
+
+    &__logo {
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 7px 7px 25px rgba(0, 0, 0, .3);
+
+        background-color: rgba(255, 255, 255, .9);
+
+        transform-origin: 50% 0;
+        transform: scale(1.1);
+    }
+
+    &__text-content {
+        align-self: center;
+        padding-top: 4em;
+        grid-column: 1;
+        grid-row: 1;
+
+        @mixin atMedium {
+            grid-column: 2;
+        }
+    }
+
+    &__title {
+        font-weight: 300;
+        color: $mainPurple;
+        font-size: 3.5rem;
+        margin: 0;
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        color: $mainPurple;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    &__description {
+        font-size: 1.1rem;
+        font-weight: 100;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+        max-width: 30rem;
+    }
+}

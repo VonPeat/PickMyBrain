@@ -1,0 +1,17 @@
+.btn {
+    background-color: $mainPurple;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: .75rem 1.2rem;
+    display: inline-block;
+
+    &--pink {
+        background-color: $mainPink;
+    }
+
+    &--large {
+        margin-top: 50px;
+        padding: 1.1rem, 1.9rem;
+        font-size: 1.25rem;
+    }
+}

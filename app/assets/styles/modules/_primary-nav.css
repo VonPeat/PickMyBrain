@@ -1,0 +1,32 @@
+.primary-nav {
+    padding-top: 10px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+        padding-right: 7px;
+    }
+
+    li:last-child {
+        padding-right: 0;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 8px;
+        font-size: .8rem;
+        font-weight: 700;
+        background-color: rgba($mainPurple, .5);
+
+        @mixin atMedium {
+            background-color: transparent;
+            font-size: 1em;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.site-header {
+    padding: 10px 0;
+    position: absolute;
+    background-color: rgba($mainPurple, .3);
+    width: 100%;
+
+
+    &__menu-content {
+        display: flex;
+    }
+
+    &__btn-container {
+        margin-left: auto;
+    }
+}
